@@ -61,6 +61,5 @@
 @media (max-width: 450px){
     .introducao-titulo h1 {
         font-size: 2rem;
-        /* max-width: 10ch; */
     }
 }
