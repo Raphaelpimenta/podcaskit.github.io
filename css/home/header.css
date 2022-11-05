@@ -52,7 +52,7 @@
         display: block;
         position: absolute;
         width: 100%;
-        top: 70px;
+        top: 60px;
         right: 0px;
         background-color: #7b2cbf;
         text-align: center;
@@ -64,7 +64,7 @@
     }
 
     nav.ativa .header-menu {
-        height: calc(100vh - 70px);
+        height: calc(100vh - 60px);
         visibility: visible;
         overflow-y: auto;
     }
