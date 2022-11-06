@@ -1,0 +1,90 @@
+.vantagens-bg {
+    background: linear-gradient(to right, #7b2cbf 50%, #ffffff 50%);
+}
+
+.vantagens {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 5rem 1rem;
+    gap: 0rem 15rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.vantagens-texto {
+    color: #f5f5f5;
+}
+
+.vantagens-texto span {
+    display: block;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: #cccccc;
+}
+
+.vantagens-texto h1 {
+    font-size: 2rem;
+    font-weight: 100;
+    max-width: 18ch;
+    letter-spacing: 2px;
+    line-height: 1.135;
+    margin-bottom: 20px;
+}
+
+.vantagens-texto p {
+    line-height: 1.125;
+    font-weight: 100;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+    color: #cccccc;
+}
+
+.vantagens-lista ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+}
+
+.vantagens-lista img {
+    margin-bottom: 15px;
+}
+
+.vantagens-lista h3 {
+    margin-bottom: 10px;
+}
+
+.vantagens-lista p {
+    color: #a1a1a1;
+}
+
+@media (max-width: 1000px) {
+    .vantagens-bg {
+        background: linear-gradient(to bottom, #7b2cbf 50%, #ffffff 50%);
+    }
+
+    .vantagens {
+        grid-template-columns: 1fr;
+    }
+
+    .vantagens-texto {
+       text-align: center;
+       margin-bottom: 50px;
+    }
+
+    .vantagens-texto h1,
+    .vantagens-texto p,
+    .vantagens-texto a  {
+        margin: 15px auto; 
+    }
+
+    .vantagens-texto p {
+        max-width: 55ch;
+    }
+
+    /* .vantagens-lista ul {
+        grid-template-columns: 1fr;
+        align-items: center;
+    } */
+
+}
