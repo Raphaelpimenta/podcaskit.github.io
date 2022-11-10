@@ -30,3 +30,17 @@
     margin-right: 12px;
     background: url("../../img/icone/botao-play.png");
 }
+
+.titulo {
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 1.1;
+}
+
+.sub-titulo {
+    display: block;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+}

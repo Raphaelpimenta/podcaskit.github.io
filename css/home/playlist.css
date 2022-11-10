@@ -1,0 +1,122 @@
+.playlist-bg {
+    background-color: #7b2cbf;
+}
+
+.playlist {
+    padding: 5rem;
+}
+
+.playlist h2{
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #f7f7f7;
+    font-weight: 300;
+}
+
+.playlist-item ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem 3rem;
+    max-width: max-content;
+    margin: 0 auto;
+}
+
+.playlist-item li {
+    background-color: #8a3acfa2;
+    color: #f7f7f7;
+    padding: 1rem;
+}
+
+.playlist-item li p {
+    margin-bottom: 15px;
+}
+
+.playlist-item .item {
+    display: flex;
+    padding-bottom: 20px;
+    align-items: center;
+    gap: 50px;
+    border-bottom: 1px solid #a7a7a7;
+}
+
+.item .faixa {
+    width: 10rem;
+    height: 6px;
+    background-color: #a7a7a7;
+    border-radius: 10px;
+    position: relative;
+}
+
+.playlist-item li:nth-child(1) .item .faixa {
+    width: 10rem;
+    height: 6px;
+    background: linear-gradient(to right, #eeef20 50%, #a7a7a7 50%);
+}
+
+.playlist-item li:nth-child(1) .item .faixa::before {
+    content: '02:10';
+    color: #a7a7a7;
+    display: inline-block;
+    font-size: 12px;
+    position: absolute;
+    bottom: -5px;
+    left: -40px;
+}
+
+.faixa::before {
+    content: '00:00';
+    color: #a7a7a7;
+    display: inline-block;
+    font-size: 12px;
+    position: absolute;
+    bottom: -5px;
+    left: -40px;
+}
+
+.faixa::after {
+    content: '04:20';
+    color: #a7a7a7;
+    display: inline-block;
+    font-size: 12px;
+    position: absolute;
+    bottom: -5px;
+    right: -40px;
+}
+
+.nome {
+    display: block;
+    margin-top: 15px;
+    color: #cccccc;
+    font-size: 14px;
+}
+
+@media (max-width: 850px){
+    .playlist {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 740px) {
+    .playlist h2 {
+        margin-bottom: 2rem;
+    }
+
+    .playlist-item ul {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        overflow-y: scroll;
+        height: 20rem;
+    }
+
+    .playlist-item li {
+        padding: 1rem;
+        
+    }
+}
+
+@media (max-width: 400px){
+    .item .faixa,
+    .playlist-item li:nth-child(1) .item .faixa {
+        width: 6.5rem;
+    }
+}

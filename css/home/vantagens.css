@@ -16,20 +16,12 @@
 }
 
 .vantagens-texto span {
-    display: block;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 2.5px;
     color: #cccccc;
 }
 
 .vantagens-texto h1 {
-    font-size: 2rem;
-    font-weight: 100;
     max-width: 18ch;
     letter-spacing: 2px;
-    line-height: 1.135;
-    margin-bottom: 20px;
 }
 
 .vantagens-texto p {
@@ -60,7 +52,7 @@
 
 @media (max-width: 1000px) {
     .vantagens-bg {
-        background: linear-gradient(to bottom, #7b2cbf 50%, #ffffff 50%);
+        background: linear-gradient(to bottom, #7b2cbf 48%, #ffffff 48%);
     }
 
     .vantagens {
@@ -82,9 +74,24 @@
         max-width: 55ch;
     }
 
-    /* .vantagens-lista ul {
-        grid-template-columns: 1fr;
-        align-items: center;
-    } */
+    .vantagens-lista ul {
+        gap: 3rem;
+        margin: 15px;
+    }
 
+}
+
+@media (max-width: 600px) {
+    .vantagens-bg {
+        background: linear-gradient(to bottom, #7b2cbf 35%, #ffffff 0%);
+    }
+
+    .vantagens-lista img {
+        max-width: max-content;
+        margin: 20px auto;
+    }
+    .vantagens-lista ul {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
 }

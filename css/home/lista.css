@@ -1,0 +1,31 @@
+.lista-bg {
+    background-color: #9558eb;
+    margin-top: 120px;
+}
+
+.lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+}
+
+.lista-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.lista-item h4 {
+    font-weight: 300;
+    color: #f7f7f7;
+}
+
+@media (max-width: 600px) {
+    .lista {
+        gap: 15px;
+    }
+
+
+}
