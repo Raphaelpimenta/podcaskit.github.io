@@ -1,0 +1,16 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #a7a7a7;
+    padding: 3rem 0rem;
+}
+
+.footer h3 {
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.redes {
+    display: flex;
+    gap: 15px;
+}
